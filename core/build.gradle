@@ -16,7 +16,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
         buildConfigField "String", "NewsAppBaseUrl", "\"https://newsapi.org/\""
-        buildConfigField "String", "NewsApiKey", "\"29fab4b8d08644f5b63c251bf0d87366\""
+        buildConfigField "String", "NewsApiKey", "\"c789f74181994993aa7d888d5e8e1d72\""
     }
 
     buildTypes {

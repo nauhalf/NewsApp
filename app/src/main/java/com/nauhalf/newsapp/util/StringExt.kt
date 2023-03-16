@@ -8,7 +8,7 @@ import java.util.TimeZone
 
 @SuppressLint("SimpleDateFormat")
 fun String.toDate(
-    baseFormat: String = "yyyy-MM-dd'T'HH:mm:ssZ",
+    baseFormat: String = "yyyy-MM-dd'T'HH:mm:ss'Z'",
     baseTimeZone: TimeZone = TimeZone.getTimeZone("UTC"),
 ): Date? {
     return try {

@@ -1,4 +1,4 @@
-package com.nauhalf.newsapp.view.main
+package com.nauhalf.newsapp.screen.news
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
@@ -11,20 +11,22 @@ import com.nauhalf.newsapp.data.news.api.repository.NewsRepository
 import kotlinx.coroutines.flow.first
 
 class NewsPagingSource(
-    private val newsRepository: com.nauhalf.newsapp.data.news.api.repository.NewsRepository,
-) : PagingSource<Int, com.nauhalf.newsapp.data.news.api.model.News>() {
-    override fun getRefreshKey(state: PagingState<Int, com.nauhalf.newsapp.data.news.api.model.News>): Int? {
+    private val newsRepository: NewsRepository,
+    private val category: Category,
+) : PagingSource<Int, News>() {
+    override fun getRefreshKey(state: PagingState<Int, News>): Int? {
         return state.anchorPosition?.let { anchorPosition ->
             state.closestPageToPosition(anchorPosition)?.prevKey?.plus(1)
                 ?: state.closestPageToPosition(anchorPosition)?.nextKey?.minus(1)
         }
     }
 
-    override suspend fun load(params: LoadParams<Int>): LoadResult<Int, com.nauhalf.newsapp.data.news.api.model.News> {
+    override suspend fun load(params: LoadParams<Int>): LoadResult<Int, News> {
         val idx = params.key ?: 1
         val result = newsRepository.fetchTopHeadline(
             page = idx,
             pageSize = params.loadSize,
+            category = category.value
         ).first()
 
         return when (result) {
