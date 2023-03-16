@@ -70,9 +70,6 @@ dependencies {
     implementation 'com.google.dagger:hilt-android:2.45'
     kapt 'com.google.dagger:hilt-android-compiler:2.45'
 
-    // Swipe Refresh Layout
-    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
-
     // Glide
     implementation 'com.github.bumptech.glide:glide:4.14.2'
     implementation 'com.github.bumptech.glide:okhttp-integration:4.14.2'
