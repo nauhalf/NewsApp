@@ -10,7 +10,7 @@ This is an App for showing the List of News from [News API](https://newsapi.org/
 
 ## Design Inspiration
 For the UI Design, the list page I was inspired by [Dicky Bhismawan H's work](https://www.figma.com/community/file/975336242667665188)
-![Dicky Bhismawan H Design](https://s3-alpha.figma.com/hub/file/1349586731/a3778eae-12c5-4776-9cdf-2682394d9013-cover.png)
+![Dicky Bhismawan H Design](/docs/inspiration.png)
 
 
 ## Tech stack & Open-source library
