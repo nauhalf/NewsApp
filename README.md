@@ -25,7 +25,7 @@ For the UI Design, the list page I was inspired by [Dicky Bhismawan H's work](ht
 - Retrofit2 & OkHttp3
 - Gson
 - Glide
-
+- Paging3
 
 ## Architecture
 **News App** is based on the Model View ViewModel architecture and Clean Architecture, which follows the [Guide to app architecture](https://developer.android.com/topic/architecture#modern-app-architecture).
