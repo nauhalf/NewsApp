@@ -33,13 +33,7 @@ For the UI Design, the list page I was inspired by [Dicky Bhismawan H's work](ht
 
 
 The architecture of **News App** is composed by two layers, the *UI Layer* and *Data Layer*.  For now, it doesn't use the domain layer. 
-![Architecture Overview](/docs/architecture_overview.png)
-
-### Additional Information
-This project created with:
-- Android Studio Electric Eel
-- AGP Version 7.4.0
-- Gradle Version 7.5
+![Architecture Overview](/docs/architecture.jpg)
 
 ## Demo
 [Download APK](/demo/app-debug.apk)
