@@ -1,7 +1,7 @@
 # News App
 ![NewsA App](/docs/banner.png)
 
-This is an App for showing the List of News from [News API](https://newsapi.org/) for providing the API.
+This is an App for showing the List of News from [News API](https://newsapi.org/).
 
 
 # Features
