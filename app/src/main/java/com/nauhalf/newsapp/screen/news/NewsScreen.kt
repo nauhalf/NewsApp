@@ -1,8 +1,3 @@
-@file:OptIn(
-    ExperimentalGlideComposeApi::class, ExperimentalMaterial3Api::class,
-    ExperimentalMaterial3Api::class, ExperimentalMaterial3Api::class
-)
-
 package com.nauhalf.newsapp.screen.news
 
 import android.widget.Toast
@@ -39,6 +34,8 @@ import com.nauhalf.newsapp.component.ErrorPlaceholder
 import com.nauhalf.newsapp.data.news.api.model.News
 import com.nauhalf.newsapp.screen.NewsRoute
 
+@ExperimentalGlideComposeApi
+@ExperimentalMaterial3Api
 @Composable
 fun NewsScreen(
     modifier: Modifier = Modifier,
@@ -72,6 +69,7 @@ fun NewsScreen(
 
 }
 
+@ExperimentalMaterial3Api
 @Composable
 fun NewsCategory(
     modifier: Modifier = Modifier,
@@ -94,6 +92,8 @@ fun NewsCategory(
     }
 }
 
+@ExperimentalGlideComposeApi
+@ExperimentalMaterial3Api
 @Composable
 fun NewsList(
     pagingItems: LazyPagingItems<News>,
