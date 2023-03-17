@@ -19,12 +19,14 @@ class NewsRepositoryImpl(
     override fun fetchTopHeadline(
         page: Int,
         pageSize: Int,
+        category: String,
     ): Flow<WrapperResponse<GenericPaging<News>>> = flow {
         try {
             // call API fetchTopHeadline
             val data = newsApi.fetchTopHeadline(
                 page = page,
-                pageSize = pageSize
+                pageSize = pageSize,
+                category = category
             )
             // if status is not ok but http code 2XX, emit an general error
             // if articles is null, emit an empty response

@@ -10,5 +10,6 @@ interface NewsRepository {
     fun fetchTopHeadline(
         page: Int,
         pageSize: Int,
+        category: String,
     ): Flow<WrapperResponse<GenericPaging<News>>>
 }

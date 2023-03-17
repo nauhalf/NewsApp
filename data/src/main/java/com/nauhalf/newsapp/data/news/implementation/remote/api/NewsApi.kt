@@ -13,5 +13,7 @@ interface NewsApi {
         page: Int = 1,
         @Query("country")
         country: String = "us",
+        @Query("category")
+        category: String? = null
     ): TopHeadlineResponse
 }
